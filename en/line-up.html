@@ -1,0 +1,15 @@
+---
+layout: default
+title: line up english
+lang: en
+ref: line-up
+---
+
+<h1>Line Up English</h1>
+
+{% for band in site.bands %}
+<article>
+  <a href="{{ post.url }}">{{ band.title }}</a>
+  {{ band.content }}
+</article>
+{% endfor %}

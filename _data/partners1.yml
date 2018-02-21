@@ -1,0 +1,152 @@
+main partner:
+  safety:
+    name: Safety Jogger
+    url: www.safetyjogger.com
+  rocktribune:
+    name: Rock Tribune
+    url: www.rocktribune.be
+  westcoastchoppers:
+    name: West Coast Choppers
+    url: www.westcoastchoppers.com
+  large:
+    name: Large powered by EMP
+    url: www.large.nl
+  rondom:
+    name: Rondom
+    url: www.rondom.be
+  all-scaff:
+    name: All-Scaff
+    url: www.all-scaff.be
+  
+partner:
+  barbecook:
+    name: Barbecook
+    url: www.barbecook.be
+  gammawopla:
+    name: Gamma Wopla
+    url:
+  peugeot:
+    name: Peugeot
+    url: www.peugeot.be
+  harley:
+    name: Harley Davidson West Flandres
+    url:
+  velda:
+    name: Velda
+    url:
+  d'hondt:
+    name: d'Hondt
+    url:
+  accent:
+    name: Accent
+    url:
+  schenker:
+    name: Schenker
+    url:
+  trucking:
+    name: Trucking
+    url:
+  bidfood:
+    name: Bidfood
+    url:
+  alphaomega:
+    name: Alpha Omega
+    url:
+  hubeau:
+    name: Hubeau
+    url:
+  d&c:
+    name: D&C Guitars
+    url:
+  blc-group:
+    name: BLC Group
+    url:
+  de-draak:
+    name: De Draak koffie en thee
+    url:
+  bart-vanderstraeten:
+    name: Bart Vanderstraeten
+    url:
+  safti:
+    name: Safti
+    url:
+  huro:
+    name: Huro
+    url:
+  weyme-construct:
+    name: Weyme Construct
+    url:
+    
+location & decoration partner:
+  stad-kortrijk:
+    name: Stad Kortrijk
+    url: www.kortrijk.be
+  west-vlaanderen:
+    name: West-Vlaanderen
+    url: www.west-vlaanderen.be
+  ebs:
+    name: EBS
+    url: 
+  pas:
+    name: PAS Security
+    url:
+  inter:
+    name: Inter
+    url:
+  quadrifinish:
+    name: Quadrifinish
+    url:
+  ledlab:
+    name: LedLab
+    url:
+  sparks:
+    name: Sparks
+    url:
+  alter-expo:
+    name: Alter Expo
+    url:
+    
+media partners:
+  studio-brussel:
+    name: Studio Brussel
+    url: www.stubru.be
+  rockmuzine:
+    name: RockMuzine
+    url:
+  focus-wtv:
+    name: Focus-WTV
+    url:
+  hardrock:
+    name: HardRock
+    url:
+  rockhard:
+    name: Rockhard
+    url:
+  aardschok:
+    name: Aardschok
+    url:
+  newsmonkey:
+    name: Newsmonkey
+    url:
+  la-voix-du-nord:
+    name: La Voix Du Nord
+    url:
+  kw:
+    name: Krant van West-Vlaanderen
+    url:
+  infoconcert:
+    name: Infoconcert.com
+    url:
+  
+food & beverage partner:
+  coca-cola:
+    name: Coca-Cola
+    url:
+  redbull:
+    name: Red Bull
+    url:
+  lipton:
+    name: Lipton
+    url:
+  
+  

@@ -9,3 +9,9 @@ l:
   en: English
   nl: Nederlands
   fr: Français
+  
+# COLLECTIONS
+collections:
+  bands:
+    output: true
+    permalink: /:bands/:name
