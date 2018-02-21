@@ -1,0 +1,14 @@
+---
+layout: default
+title: "Partners en"
+lang: en
+ref: partners
+---
+
+<h1>{{page.title}}</h1>
+{% for partner in site.data.partners %}
+<h3>{{partner[0]}}</h3>
+  {% for partner in site.data.partners %}
+  <p>{{partner[1]}}</p>
+  {% endfor %}
+{% endfor %}

@@ -1,0 +1,31 @@
+<nav class="navbar navbar-expand-lg navbar-brandsfit" data-toggle="sticky-onscroll">
+  <div class="container">
+    <a class="navbar-brand" href="{{site.baseurl}}/{{page.lang}}">Site</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        
+        {% for menu in site.data.navigation[page.lang] %}
+        {% assign active = nil %}
+        {% assign active = '/' | append: page.lang | append: menu[1].url | append: '.html' %}
+        {% if page.url == active %}
+        {% assign active = 'active' %}
+        {% endif %}
+        
+        <li class="{{menu[1].name}} {% if forloop.first %}first{% endif %} {% if forloop.last %}last{% endif %} nav-item">
+          <a href="{{site.baseurl}}/{{page.lang}}{{ menu[1].url }}" class="nav-link">{{ menu[1].name }}</a>
+        </li>
+        {% endfor %}
+
+      </ul>
+    </div>
+  </div>
+</nav>

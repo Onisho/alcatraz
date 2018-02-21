@@ -1,0 +1,19 @@
+---
+layout: default
+title: "Canal Metal nl"
+lang: nl
+ref: canal-metal
+---
+
+<h1>{{page.title}}</h1>
+
+<div class="row">
+  {% for youtube in site.data.canal-metal %}
+  <div class="col-12 col-sm-6 col-md-4 col-lg-3">     
+    <div class="embed-responsive embed-responsive-16by9">
+      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/{{youtube.embed}}?showinfo=0&autohide=1" allowfullscreen></iframe>
+    </div>
+    <p class="text-center">{{youtube.name}} - AMF{{youtube.year}}</p>
+  </div>
+{% endfor %}
+</div>
