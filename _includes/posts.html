@@ -1,0 +1,7 @@
+{% assign posts = site.posts | where: "lang", {{include.language}} %}
+{% for post in posts %}
+<article>
+  {{ post.title }}
+  {{ post.content }}
+</article>
+{% endfor %}
