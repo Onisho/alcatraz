@@ -1,7 +1,7 @@
 {% assign posts = site.posts | where: "lang", {{include.language}} %}
 {% for post in posts %}
 <article>
-  {{ post.title }}
+  <a href="{{ post.url }}">{{ post.title }}</a>
   {{ post.content }}
 </article>
 {% endfor %}
