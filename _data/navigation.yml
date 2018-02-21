@@ -1,0 +1,37 @@
+# NAVIGATION
+# main top navigation -be sure to add both languages
+navi:
+  en:
+    home:
+      name: Home
+      url: /
+    tickets:
+      name: Tickets
+      url: /tickets
+    line-up:
+      name: Line-up
+      ulr: /line-up
+      
+  nl:
+    home:
+      name: Home
+      url: /
+    tickets:
+      name: Tickets
+      url: /tickets
+    line-up:
+      name: Line-up
+      ulr: /line-up
+      
+  fr:
+    home:
+      name: Accueil
+      url: /
+    tickets:
+      name: Billets
+      url: /billets
+    line-up:
+      name: Line-up
+      ulr: /line-up
+      
+

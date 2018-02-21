@@ -1,0 +1,11 @@
+#SITE SETTINGS
+baseurl: /alcatraz
+exclude: ['README.md']
+permalinks: pretty
+
+
+# LANGUAGES
+l:
+  nl: Nederlands
+  fr: Français
+  en: English
