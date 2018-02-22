@@ -15,6 +15,9 @@ collections:
   bands:
     output: true
     permalink: /:bands/:name
+  info:
+    output: true
+    permalink: /:info/:name
     
 defaults:
   -
@@ -34,4 +37,22 @@ defaults:
       path: "_bands/fr"
     values:
       permalink: "/fr/bands/:title"
+      lang: "fr"
+-
+    scope:
+      path: "_info/en"
+    values:
+      permalink: "/en/info/:title"
+      lang: "en"
+  -
+    scope:
+      path: "_info/nl"
+    values:
+      permalink: "/nl/info/:title"
+      lang: "nl"
+  -
+    scope:
+      path: "_info/fr"
+    values:
+      permalink: "/fr/info/:title"
       lang: "fr"

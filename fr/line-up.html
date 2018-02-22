@@ -9,6 +9,6 @@ ref: line-up
 
 {% assign items = site.bands | where: "lang", page.lang %}
 {% for item in items %}
-<h3>{{ item.title }} </h3>
+<h3><a href="{{site.baseurl}}/{{page.lang}}/bands/{{item.ref}}">{{ item.title }}</a> </h3>
 <p>{{ item.content }}</p>
 {% endfor %}
