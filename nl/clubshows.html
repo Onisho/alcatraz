@@ -1,0 +1,18 @@
+---
+layout: default
+title: "Clubshows nl"
+lang: nl
+ref: clubshows
+---
+
+<h1>{{page.title}}</h1>
+
+<div class="row">
+  {% for band in site.data.clubshows %}
+  <div class="col-12 col-sm-6 col-md-4 col-lg-3">  
+    <h2>{{band.band}}</h2>
+    <p>{{band.support}}</p>
+    <small>{{band.date}}</small>
+  </div>
+{% endfor %}
+</div>

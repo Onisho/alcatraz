@@ -1,0 +1,17 @@
+---
+layout: default
+title: "History en"
+lang: en
+ref: history
+---
+
+<h1>{{page.title}}</h1>
+
+<div class="row">
+  {% for history in site.data.history %}
+  <div class="col-12 col-sm-6 col-md-4 col-lg-3">  
+    <h2>{{history.year}}</h2>
+    <p>{{history.bands}}</p>
+  </div>
+{% endfor %}
+</div>

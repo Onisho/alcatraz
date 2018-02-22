@@ -15,3 +15,23 @@ collections:
   bands:
     output: true
     permalink: /:bands/:name
+    
+defaults:
+  -
+    scope:
+      path: "_bands/en"
+    values:
+      permalink: "/en/bands/:title"
+      lang: "en"
+  -
+    scope:
+      path: "_bands/nl"
+    values:
+      permalink: "/nl/bands/:title"
+      lang: "nl"
+  -
+    scope:
+      path: "_bands/fr"
+    values:
+      permalink: "/fr/bands/:title"
+      lang: "fr"

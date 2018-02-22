@@ -20,6 +20,12 @@ en:
   partners:
     name: Partners
     url: /partners
+  history:
+    name: History
+    url: /history
+  clubshows:
+    name: Club Shows
+    url: /clubshows
     
 fr:
   home:
@@ -40,6 +46,12 @@ fr:
   partners:
     name: Partenaires
     url: /partenaires
+  history:
+    name: Histoire
+    url: /histoire
+  clubshows:
+    name: Spectacles de club
+    url: /spectacles-de-club
     
 nl:
   home:
@@ -60,5 +72,11 @@ nl:
   partners:
     name: Partners
     url: /partners
+  history:
+    name: Historiek
+    url: /historiek
+  clubshows:
+    name: Club Shows
+    url: /clubshows
       
 

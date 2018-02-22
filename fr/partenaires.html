@@ -9,30 +9,40 @@ ref: partners
 
 <h3>Main Partners</h3>
 {% assign partners = site.data.partners2 | where: "category", "main partner" %}
+<p>
 {% for partner in partners %}
-  <p>{{partner.name}}</p>
+  {{partner.name}} /
 {% endfor %}
+</p>
 
 <h3>Partners</h3>
 {% assign partners = site.data.partners2 | where: "category", "partner" %}
+<p>
 {% for partner in partners %}
-  <p>{{partner.name}}</p>
+  {{partner.name}} /
 {% endfor %}
+</p>
 
 <h3>Location & Decoration Partners</h3>
 {% assign partners = site.data.partners2 | where: "category", "location & decoration partner" %}
+<p>
 {% for partner in partners %}
-  <p>{{partner.name}}</p>
+  {{partner.name}} /
 {% endfor %}
+</p>
 
 <h3>Media Partners</h3>
 {% assign partners = site.data.partners2 | where: "category", "media partner" %}
+<p>
 {% for partner in partners %}
-  <p>{{partner.name}}</p>
+  {{partner.name}} /
 {% endfor %}
+</p>
 
 <h3>Food & Beverage Partner</h3>
 {% assign partners = site.data.partners2 | where: "category", "food & beverage partner" %}
+<p>
 {% for partner in partners %}
-  <p>{{partner.name}}</p>
+  {{partner.name}} /
 {% endfor %}
+</p>

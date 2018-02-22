@@ -9,7 +9,9 @@ ref: partners
 {% for partner in site.data.partners1 %}
 <h3>{{partner[0]}}</h3>
   {% assign item = partner[0] %}
-  {% for items in site.data.partners1[item] %}
-  <p>{{items[0]}}</p>
-  {% endfor %}
+  <p>
+    {% for items in site.data.partners1[item] %}
+      {{items[0]}} /
+    {% endfor %}
+  </p>
 {% endfor %}
