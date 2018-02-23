@@ -1,0 +1,7 @@
+<hr />
+{% assign partners = site.data.partners2 | where: "category", "main partner" %}
+<p>
+{% for partner in partners %}
+  {{partner.name}} /
+{% endfor %}
+</p>

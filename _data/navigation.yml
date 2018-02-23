@@ -26,6 +26,15 @@ en:
   clubshows:
     name: Club Shows
     url: /clubshows
+  info:
+    name: Info
+    subcategories:
+      faq:
+        name: Faq
+        url: /info/faq
+      camping:
+        name: Camping
+        url: /info/camping
     
 fr:
   home:

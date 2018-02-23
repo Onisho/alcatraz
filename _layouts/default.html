@@ -1,23 +1,58 @@
+---
+layout: compress
+---
+
 <html>
   <!-- include content -->
   {% include head.html %}
   
 <body>
   
-  {% include dropdown-lang.html %}
+  <!-- include top -->
+  <section class="top">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col">
+          {% include dropdown-lang.html %}
+        </div>
+      </div>
+    </div>
+  </section>
   
   {% include navigation.html %}
   
-  
   <!-- include content -->
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col">
-         {{content}}
-      </div>
-    </div>
-  </div>
- 
+  <section class="main py-3">
+   <div class="container-fluid">
+     <div class="row">
+       <div class="col">{{content}}</div>
+     </div>
+   </div>
+  </section>
+  
+  <!-- include postscript -->
+  <section class="postscript py-3">
+   <div class="container-fluid">
+     <div class="row">
+       <div class="col-sm-4">RT</div>
+       <div class="col-sm-4">CLUBSHOWS</div>
+       <div class="col-sm-4">SOCIAL</div>
+     </div>
+   </div>
+  </section>
+  
+  <!-- include footer -->
+  <section class="footer py-3">
+   <div class="container-fluid">
+     <div class="row">
+       <div class="col">{% include partners.html %}</div>
+     </div>
+     <div class="row">
+       <div class="col">{% include footer.html %}</div>
+     </div>
+   </div>
+  </section>
+  
    
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 

@@ -1,7 +1,7 @@
 #SITE SETTINGS
 baseurl: /alcatraz
 exclude: ['README.md']
-permalinks: pretty
+
 
 
 # LANGUAGES
@@ -9,16 +9,22 @@ l:
   en: English
   nl: Nederlands
   fr: Français
+
+langs:
+  - "en"
+  - "fr"
   
 # COLLECTIONS
 collections:
   bands:
     output: true
-    permalink: /:bands/:name
   info:
     output: true
-    permalink: /:info/:name
+  pages:
+    output: true
     
+permalinks: pretty
+
 defaults:
   -
     scope:
@@ -38,21 +44,57 @@ defaults:
     values:
       permalink: "/fr/bands/:title"
       lang: "fr"
--
+  -
     scope:
-      path: "_info/en"
+      path: "_info/en/camping"
     values:
-      permalink: "/en/info/:title"
+      permalink: "/en/info/camping/:title"
       lang: "en"
   -
     scope:
-      path: "_info/nl"
+      path: "_info/nl/camping"
     values:
-      permalink: "/nl/info/:title"
+      permalink: "/nl/info/camping/:title"
       lang: "nl"
   -
     scope:
-      path: "_info/fr"
+      path: "_info/fr/camping"
     values:
-      permalink: "/fr/info/:title"
+      permalink: "/fr/info/camping/:title"
+      lang: "fr"
+  -
+    scope:
+      path: "_info/en/faq"
+    values:
+      permalink: "/en/info/faq/:title"
+      lang: "en"
+  -
+    scope:
+      path: "_info/nl/faq"
+    values:
+      permalink: "/nl/info/faq/:title"
+      lang: "nl"
+  -
+    scope:
+      path: "_info/fr/faq"
+    values:
+      permalink: "/fr/info/faq/:title"
+      lang: "fr"
+  -
+    scope:
+      path: "_pages/en"
+    values:
+      permalink: "/en/:title"
+      lang: "en"
+  -
+    scope:
+      path: "_pages/nl"
+    values:
+      permalink: "/nl/:title"
+      lang: "nl"
+  -
+    scope:
+      path: "_pages/fr"
+    values:
+      permalink: "/fr/:title"
       lang: "fr"

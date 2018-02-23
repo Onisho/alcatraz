@@ -1,5 +1,5 @@
-<nav class="navbar navbar-expand-lg" data-toggle="sticky-onscroll">
-  <div class="container">
+<nav class="navbar navbar-expand-lg navbar-light bg-light" data-toggle="sticky-onscroll">
+  <div class="container-fluid">
     <a class="navbar-brand" href="{{site.baseurl}}/{{page.lang}}">Site</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon">
@@ -20,9 +20,20 @@
         {% assign active = 'active' %}
         {% endif %}
         
+        {% if menu[1].subcategories %}
+        <li class="{{menu[1].name}} {% if forloop.first %}first{% endif %} {% if forloop.last %}last{% endif %} nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ menu[1].name }}</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            {% for subcategory in menu[1].subcategories %}
+            <a href="{{site.baseurl}}/{{page.lang}}{{subcategory[1].url}}" class="dropdown-item">{{subcategory[1].name}}</a>
+            {% endfor %}
+          </div>
+        </li>
+        {% else %}
         <li class="{{menu[1].name}} {% if forloop.first %}first{% endif %} {% if forloop.last %}last{% endif %} nav-item">
           <a href="{{site.baseurl}}/{{page.lang}}{{ menu[1].url }}" class="nav-link">{{ menu[1].name }}</a>
         </li>
+        {% endif %}
         {% endfor %}
 
       </ul>
