@@ -1,0 +1,13 @@
+---
+hide_body: false
+fields:
+- name: permalink
+  label: Permalink
+  type: text
+  hidden: false
+  default: "/nl/:title"
+- name: lang
+  label: Lang
+  type: text
+  hidden: false
+  default: nl
