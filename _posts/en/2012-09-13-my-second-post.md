@@ -6,4 +6,4 @@ categories: news
 lang: en
 ---
 
-post en 2
+post en 2 is great
