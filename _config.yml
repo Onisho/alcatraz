@@ -1,7 +1,6 @@
-#SITE SETTINGS
+# SITE SETTINGS
 baseurl: /alcatraz
 exclude: ['README.md']
-
 
 
 # LANGUAGES
@@ -13,6 +12,7 @@ l:
 langs:
   - "en"
   - "fr"
+  - "nl"
   
 # COLLECTIONS
 collections:
