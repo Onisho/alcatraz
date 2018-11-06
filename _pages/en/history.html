@@ -1,17 +1,22 @@
 ---
 layout: default
-title: "History en"
+title: "History"
 lang: en
 ref: history
 ---
 
-<h1>{{page.title}}</h1>
+<h1 class="page-title">{page.title}}</h1>
 
 <div class="row">
   {% for history in site.data.history %}
-  <div class="col-12 col-sm-6 col-md-4 col-lg-3">  
-    <h2>{{history.year}}</h2>
-    <p>{{history.bands}}</p>
+  <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+    <div class="card card-primary mb-3">
+      <img class="card-img-top" src="{{site.baseurl}}/img/history/history-{{history.year}}.jpg" alt="{{history.year}}">
+      <div class="card-body">
+        <h5 class="card-title">{{history.year}}</h5>
+        <p class="card-text">{{history.bands}}</p>
+      </div>
+    </div>
   </div>
 {% endfor %}
 </div>

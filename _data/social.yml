@@ -1,15 +1,15 @@
 - name: Facebook
   url: https://www.facebook.com/alcatrazmusic
-  image: icon-facebook.png
+  icon: fab fa-facebook-square
 
 - name: Instagram
   url: https://www.instagram.com/alcatrazfestival/
-  image: icon-instagram.png
-  
+  icon: fab fa-instagram
+
 - name: Twitter
   url: https://twitter.com/alcatrazmusic
-  image: icon-twitter.png
+  icon: fab fa-twitter
 
 - name: Youtube
   url: https://www.youtube.com/channel/UCM_42x5Qpzo5rXbEGCR5Lpg
-  image: icon-youtube.png
+  icon: fab fa-youtube

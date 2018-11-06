@@ -1,19 +1,30 @@
 ---
 layout: default
-title: "Canal Metal fr"
+title: "Canal Metal"
 lang: fr
 ref: canal-metal
 ---
 
-<h1>{{page.title}}</h1>
+<h1 class="page-title">{{page.title}}</h1>
 
 <div class="row">
   {% for youtube in site.data.canal-metal %}
-  <div class="col-12 col-sm-6 col-md-4 col-lg-3">     
-    <div class="embed-responsive embed-responsive-16by9">
-      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/{{youtube.embed}}?showinfo=0&autohide=1" allowfullscreen></iframe>
+  <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+    <div class="card card-primary mb-3">
+      <div class="embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/{{youtube.embed}}?showinfo=0&autohide=1" allowfullscreen></iframe>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">{{youtube.name}}</h5>
+        <small>AMF {{youtube.year}}</small>
+      </div>
     </div>
-    <p class="text-center">{{youtube.name}} - AMF{{youtube.year}}</p>
   </div>
 {% endfor %}
+</div>
+
+<div class="row my-3">
+  <div class="col">
+    <p class="text-center"><a href="https://www.youtube.com/channel/UCM_42x5Qpzo5rXbEGCR5Lpg" rel="external" class="btn btn-primary">Voir tous sur Youtube</a></p>
+  </div>
 </div>

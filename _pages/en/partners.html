@@ -1,17 +1,50 @@
 ---
 layout: default
-title: "Partners en"
+title: "Partners"
 lang: en
 ref: partners
 ---
 
-<h1>{{page.title}}</h1>
-{% for partner in site.data.partners1 %}
-<h3>{{partner[0]}}</h3>
-  {% assign item = partner[0] %}
-  <p>
-    {% for items in site.data.partners1[item] %}
-      {{items[0]}} /
-    {% endfor %}
-  </p>
-{% endfor %}
+<div class="text-center">
+
+<h3>Main Partners</h3>
+<div class="mb-5">
+  {% assign partners = site.data.partners | where: "category", "main partner" %}
+  {% for partner in partners %}
+  <div class="partner partner-lg "><a href="{{partner.url}}" rel="external" title="{{partner.name}}"><img typeof="foaf:Image" class="img-fluid" src="{{site.baseurl}}/img/partners/{{partner.image}}" width="250" height="330" alt=""></a></div>
+  {% endfor %}
+</div>
+
+<h3>Partners</h3>
+<div class="mb-5">
+  {% assign partners = site.data.partners | where: "category", "partner" %}
+  {% for partner in partners %}
+  <div class="partner partner-sm"><a href="{{partner.url}}" rel="external" title="{{partner.name}}"><img typeof="foaf:Image" class="img-fluid" src="{{site.baseurl}}/img/partners/{{partner.image}}" width="106" height="140" alt=""></a></div>
+  {% endfor %}
+</div>
+
+<h3>Location & Decoration Partners</h3>
+<div class="mb-5">
+  {% assign partners = site.data.partners | where: "category", "location & decoration partner" %}
+  {% for partner in partners %}
+  <div class="partner partner-sm"><a href="{{partner.url}}" rel="external" title="{{partner.name}}"><img typeof="foaf:Image" class="img-fluid" src="{{site.baseurl}}/img/partners/{{partner.image}}" width="106" height="140" alt=""></a></div>
+  {% endfor %}
+</div>
+
+<h3>Media Partners</h3>
+<div class="mb-5">
+  {% assign partners = site.data.partners | where: "category", "media partner" %}
+  {% for partner in partners %}
+  <div class="partner partner-sm"><a href="{{partner.url}}" rel="external" title="{{partner.name}}"><img typeof="foaf:Image" class="img-fluid" src="{{site.baseurl}}/img/partners/{{partner.image}}" width="106" height="140" alt=""></a></div>
+  {% endfor %}
+</div>
+
+<h3>Food & Beverage Partner</h3>
+<div class="mb-5">
+  {% assign partners = site.data.partners | where: "category", "food & beverage partner" %}
+  {% for partner in partners %}
+  <div class="partner partner-sm"><a href="{{partner.url}}" rel="external" title="{{partner.name}}"><img typeof="foaf:Image" class="img-fluid" src="{{site.baseurl}}/img/partners/{{partner.image}}" width="106" height="140" alt=""></a></div>
+  {% endfor %}
+</div>
+
+</div>

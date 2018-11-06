@@ -1,0 +1,17 @@
+t:
+  ## newsletter ##
+  newsletter_title:
+    en: Subscribe to our noiseletter
+    nl: Abonneer u op onze noiseletter
+    fr: Abonnez-vous à notre noiseletter
+
+  ## forms ##
+  form_subscribe:
+    en: Subscribe
+    nl: Abonneren
+    fr: Souscrire
+
+  form_email:
+    en: Your email address
+    nl: Uw email adres
+    fr: Votre adresse email

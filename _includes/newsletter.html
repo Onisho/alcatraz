@@ -1,0 +1,14 @@
+<form class="form-inline justify-content-center" action="https://onisho.createsend.com/t/r/s/jyurlur/" method="post" id="subForm">
+  <div class="form-row align-items-center">
+    <div class="col-auto">
+      {{ site.data.translate.t['newsletter_title'][page.lang] }}
+    </div>
+    <div class="col-auto">
+      <label class="sr-only" for="inlineFormInput">{{ site.data.translate.t['form_email'][page.lang] }}</label>
+      <input type="email" class="form-control mb-2" id="inlineFormInput" name="cm-jyurlur-jyurlur" id="fieldEmail" placeholder="{{ site.data.translate.t['form_email'][page.lang] }}">
+    </div>
+    <div class="col-auto">
+      <button type="submit" class="btn btn-primary mb-2"><i class="fas fa-share"></i> {{ site.data.translate.t['form_subscribe'][page.lang] }}</button>
+    </div>
+  </div>
+</form>

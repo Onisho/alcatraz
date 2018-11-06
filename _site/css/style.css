@@ -1,0 +1,41 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,300,500,700,900');
+@import url('https://fonts.googleapis.com/css?family=Metal+Mania');
+
+/* GLOBAL */
+body {background-color:#1F1E1C;color:#f1decc;font-family: 'Roboto', sans-serif;}
+a {color:#c17d23;text-decoration:none;cursor:url('https://alcatraz.be/hand.cur'), url('https://www.alcatraz.be/hand.png'), url('https://www.alcatraz.be/hand.gif'), auto;}
+a:link, a:visited, a:hover, a:active {text-decoration:none;color:#c17d23;}
+.text-muted {color:#9e9790 !important;}
+
+/* TOP */
+.top,
+.top .dropdown-menu {font-size:.8rem;}
+
+/* NAVIGATION */
+.navbar-primary .navbar-brand {font-family: 'Roboto', sans-serif;text-transform:uppercase;font-weight:900;}
+.navbar-primary .nav-link {font-family: 'Roboto', sans-serif;text-transform:uppercase;font-weight:900;}
+
+/* TITLE */
+.amf-title {background: #3a3023 url(../img/amf-title.png) 50% 0;height:100px;border-top:1px solid #c17d23;border-bottom:1px solid #c17d23;}
+
+/* CARDS */
+.card-primary {background:#000;}
+
+/* PAGE */
+.page-title {font-size:1.6rem;text-transform:uppercase;margin-bottom:25px;}
+
+/* BUTTONS */
+a.btn-primary, .btn-primary {background-color:#c17d23;border-color:#c17d23;color:#000;}
+a.btn-primary:hover, .btn-primary:hover {background-color:#E29227;border-color:#E29227;color:#000;}
+
+/* PARTNERS */
+.partner {display: inline-block;}
+.partner img {position:relative;}
+.partner-lg {overflow:hidden;height:165px;}
+.partner-lg img:hover {top:-165px;}
+.partner-sm {overflow:hidden;height:70px;}
+.partner-sm img:hover {top:-70px;}
+
+/* SECTIONS */
+section.footer {background-color:#272725;}

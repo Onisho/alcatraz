@@ -1,14 +1,14 @@
-- band: Anvil
-  support: Trance
-  date: 2018-02-24
-  tickets:
+- band: The Dead Deasies
+  support: Scarved
+  date: 2018-11-29
+  tickets: https://apps.ticketmatic.com/widgets/wilde_westen/addtickets?event=591920784221#/addtickets
 
-- band: Vandenberg's Moonkings
-  support: Support
-  date: 2018-03-10
-  tickets:
-  
-- band: Ensiferum
-  support: Ex Deo
-  date: 2018-04-30
-  tickets:
+- band: Doro
+  support: Special Guest
+  date: 2019-03-08
+  tickets: https://apps.ticketmatic.com/widgets/wilde_westen/addtickets?event=823250709632#/addtickets
+
+- band: Y&T
+  support: Special Guest
+  date: 2019-10-26
+  tickets: https://apps.ticketmatic.com/widgets/wilde_westen/addtickets?event=230718101277#/addtickets

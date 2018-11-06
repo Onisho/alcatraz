@@ -1,7 +1,6 @@
-<hr />
-{% assign partners = site.data.partners2 | where: "category", "main partner" %}
-<p>
-{% for partner in partners %}
-  {{partner.name}} /
-{% endfor %}
-</p>
+<div>
+  {% assign partners = site.data.partners | where: "category", "main partner" %}
+  {% for partner in partners %}
+  <div class="partner partner-sm "><a href="{{partner.url}}" rel="external" title="{{partner.name}}"><img typeof="foaf:Image" class="img-fluid" src="{{site.baseurl}}/img/partners/{{partner.image}}" width="106" height="140" alt=""></a></div>
+  {% endfor %}
+</div>
