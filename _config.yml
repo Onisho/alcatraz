@@ -1,7 +1,9 @@
 # SITE SETTINGS
 baseurl: /alcatraz
 exclude: ['README.md']
-
+markdown: kramdown
+timezone: UTC
+future: true
 
 # LANGUAGES
 l:
@@ -13,7 +15,26 @@ langs:
   - "en"
   - "fr"
   - "nl"
-  
+
+# PRICES
+p:
+  friday: '55'
+  saturday: '70'
+  sunday: '70'
+  combi: '140'
+  friday-vip: '100'
+  saturday-vip: '130,5'
+  sunday-vip: '130,5'
+  combi-vip: '255'
+  combi-vip-xl: '500'
+  camping: '16'
+  camping-motor: '25'
+  camping-camper: '50'
+  camping-diy: '115'
+  camping-tipi: '180'
+  camping-bell-2: '250'
+  camping-bell-4: '500'
+
 # COLLECTIONS
 collections:
   bands:
@@ -22,7 +43,7 @@ collections:
     output: true
   pages:
     output: true
-    
+
 permalinks: pretty
 
 defaults:
@@ -46,39 +67,21 @@ defaults:
       lang: "fr"
   -
     scope:
-      path: "_info/en/camping"
+      path: "_info/en"
     values:
-      permalink: "/en/info/camping/:title"
+      permalink: "/en/info/:title"
       lang: "en"
   -
     scope:
-      path: "_info/nl/camping"
+      path: "_info/nl"
     values:
-      permalink: "/nl/info/camping/:title"
+      permalink: "/en/info/:title"
       lang: "nl"
   -
     scope:
-      path: "_info/fr/camping"
+      path: "_info/fr"
     values:
-      permalink: "/fr/info/camping/:title"
-      lang: "fr"
-  -
-    scope:
-      path: "_info/en/faq"
-    values:
-      permalink: "/en/info/faq/:title"
-      lang: "en"
-  -
-    scope:
-      path: "_info/nl/faq"
-    values:
-      permalink: "/nl/info/faq/:title"
-      lang: "nl"
-  -
-    scope:
-      path: "_info/fr/faq"
-    values:
-      permalink: "/fr/info/faq/:title"
+      permalink: "/en/info/:title"
       lang: "fr"
   -
     scope:

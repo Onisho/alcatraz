@@ -5,7 +5,7 @@ lang: en
 ref: history
 ---
 
-<h1 class="page-title">{page.title}}</h1>
+<h1 class="page-title">{{page.title}}</h1>
 
 <div class="row">
   {% for history in site.data.history %}
@@ -13,8 +13,8 @@ ref: history
     <div class="card card-primary mb-3">
       <img class="card-img-top" src="{{site.baseurl}}/img/history/history-{{history.year}}.jpg" alt="{{history.year}}">
       <div class="card-body">
-        <h5 class="card-title">{{history.year}}</h5>
-        <p class="card-text">{{history.bands}}</p>
+        <h2 class="card-title">{{history.year}}</h2>
+        <p class="card-text small">{{history.bands}}</p>
       </div>
     </div>
   </div>

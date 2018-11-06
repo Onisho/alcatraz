@@ -1,6 +1,6 @@
 <div>
   {% assign partners = site.data.partners | where: "category", "main partner" %}
   {% for partner in partners %}
-  <div class="partner partner-sm "><a href="{{partner.url}}" rel="external" title="{{partner.name}}"><img typeof="foaf:Image" class="img-fluid" src="{{site.baseurl}}/img/partners/{{partner.image}}" width="106" height="140" alt=""></a></div>
+  <div class="partner partner-md "><a href="{{partner.url}}" rel="external" title="{{partner.name}}"><img typeof="foaf:Image" class="img-fluid" src="{{site.baseurl}}/img/partners/{{partner.image}}" width="138" height="182" alt=""></a></div>
   {% endfor %}
 </div>

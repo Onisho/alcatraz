@@ -1,41 +1,85 @@
 /* FONTS */
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,300,500,700,900');
 @import url('https://fonts.googleapis.com/css?family=Metal+Mania');
+@import url('https://fonts.googleapis.com/css?family=Oswald:400,700');
 
 /* GLOBAL */
-body {background-color:#1F1E1C;color:#f1decc;font-family: 'Roboto', sans-serif;}
+body {background-color:#1F1E1C;color:#f1decc;}
 a {color:#c17d23;text-decoration:none;cursor:url('https://alcatraz.be/hand.cur'), url('https://www.alcatraz.be/hand.png'), url('https://www.alcatraz.be/hand.gif'), auto;}
 a:link, a:visited, a:hover, a:active {text-decoration:none;color:#c17d23;}
 .text-muted {color:#9e9790 !important;}
+.text-primary {color:#f1decc !important;}
+.text-secondary {color:#a57a53 !important;}
+hr {border-color:rgba(241,222,204,.3);margin:30px 0;}
+.highlight {color:#ffffff;font-weight:bold;}
+
+/* TEXT */
+h1 {font-family:'Oswald', sans-serif;text-transform:uppercase;font-weight:700;}
+h2, h3, h4, h5, h6 {font-family:'Oswald', sans-serif;text-transform:uppercase;font-weight:400;}
+h4 {color:#FFFFFF;}
+h5 {color:#9a2715;}
+
+/* COLORS */
+.bg-dark {background-color:#000 !important;}
+
+/* DROPDOWN MENU */
+.dropdown-menu {background-color:#333330;}
+.dropdown-item:hover {color:#ffffff;text-decoration:none;background-color:#000000;}
+
+/* TABLE */
+.table td, .table th {border-color:rgba(241,222,204,.3);}
 
 /* TOP */
 .top,
-.top .dropdown-menu {font-size:.8rem;}
+.top .dropdown-menu {font-family:'Oswald', sans-serif;text-transform:uppercase;font-weight:400;font-size:.8rem;}
 
 /* NAVIGATION */
-.navbar-primary .navbar-brand {font-family: 'Roboto', sans-serif;text-transform:uppercase;font-weight:900;}
-.navbar-primary .nav-link {font-family: 'Roboto', sans-serif;text-transform:uppercase;font-weight:900;}
+@media screen and (min-width: 992px) {
+  .navbar {padding: 0rem 1rem;}
+  .navbar-primary .nav-link {padding: 1.2rem 1rem;}
+}
+.navbar-primary .navbar-brand {font-family:'Oswald', sans-serif;text-transform:uppercase;font-weight:700;font-size:1.3rem;color:#f1decc;}
+.navbar-primary .nav-link {font-family:'Oswald', sans-serif;text-transform:uppercase;font-weight:700;font-size:1.3rem;}
+.navbar-primary .navbar-nav .nav-link {color:#FFFFFF;}
+.navbar-primary .navbar-nav .nav-link:hover {color:#c17d23;}
+.navbar-primary .dropdown-menu {font-family:'Oswald', sans-serif;text-transform:uppercase;font-weight:700;font-size:1rem;}
+.navbar-primary .nav-item.Tickets, .navbar-primary .nav-item.Billets {background-color:#c17d23;}
+.navbar-primary .nav-item.Tickets:hover, .navbar-primary .nav-item.Billets:hover {background-color:#E29227;}
+.navbar-primary .nav-item.Tickets a:hover, .navbar-primary .nav-item.Billets a:hover {color:#000;}
 
 /* TITLE */
 .amf-title {background: #3a3023 url(../img/amf-title.png) 50% 0;height:100px;border-top:1px solid #c17d23;border-bottom:1px solid #c17d23;}
 
 /* CARDS */
-.card-primary {background:#000;}
+.card-primary {background:#000;overflow:hidden;}
+.card-primary {-webkit-transition:all 0.3s;transition:all 0.3s;-webkit-box-sizing: border-box;box-sizing: border-box;}
+.card-primary:hover{box-shadow:0 0 20px 0 rgba(193,125,35,0.4);transform: scale(1.025) rotate(0deg);-webkit-transform: scale(1.025) rotate(0deg);}
+.card-lineup .card-body {padding:.75rem;text-shadow:1px 1px 0px #000;}
+.card-lineup .card-img-overlay {padding: 0 1rem;bottom:0;top:auto;}
 
 /* PAGE */
-.page-title {font-size:1.6rem;text-transform:uppercase;margin-bottom:25px;}
+.page-title {font-size:2.8rem;text-align:center;padding:15px 0 25px 0;}
 
 /* BUTTONS */
+.btn {font-family: 'Oswald', sans-serif;font-weight:400;}
 a.btn-primary, .btn-primary {background-color:#c17d23;border-color:#c17d23;color:#000;}
 a.btn-primary:hover, .btn-primary:hover {background-color:#E29227;border-color:#E29227;color:#000;}
+.btn-primary:focus, .btn-primary:active {box-shadow:none;background-color:#E29227;border-color:#E29227;}
 
 /* PARTNERS */
 .partner {display: inline-block;}
 .partner img {position:relative;}
 .partner-lg {overflow:hidden;height:165px;}
 .partner-lg img:hover {top:-165px;}
+.partner-md {overflow:hidden;height:91px;}
+.partner-md img:hover {top:-91px;}
 .partner-sm {overflow:hidden;height:70px;}
 .partner-sm img:hover {top:-70px;}
 
 /* SECTIONS */
-section.footer {background-color:#272725;}
+section.partners,
+section.top {background-color:#333330;}
+
+/* FORMS */
+.input-newsletter {background-color:#333330;border-color:#f1decc;color:#FFF;}
+.input-newsletter:focus {background-color:#333330;border-color:#c17d23;color:#f1decc;}
+.input-newsletter::-webkit-input-placeholder {color:#f1decc;opacity:.7;}

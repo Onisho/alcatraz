@@ -1,8 +1,115 @@
 ---
 layout: default
-title: "Billets fr"
+title: "Billets"
 lang: fr
 ref: tickets
 ---
 
-<h1>{{page.title}}</h1>
+<h1 class="page-title">{{page.title}}</h1>
+
+<div class="row">
+  <div class="col-lg-10 offset-lg-1">
+
+    <div class="row">
+      <div class="col-md-6 mb-4">
+        <h3 class="text-center">Billets réguliers</h3>
+        <table class="table">
+          <tr>
+            <td class="align-middle">Combi</td>
+            <td class="align-middle highlight">€{{site.p.combi}}</td>
+            <td><a href="#" rel="external" class="btn btn-primary btn-sm w-100">Buy Combi ticket</a></td>
+          </tr>
+          <tr>
+            <td class="align-middle">Vendredi <span class="text-muted small">(9/8)</span></td>
+            <td class="align-middle highlight">€{{site.p.friday}}</td>
+            <td><a href="#" rel="external" class="btn btn-primary btn-sm w-100">Achetez billets Vendredi</a></td></tr>
+          <tr>
+            <td class="align-middle">Samedi <span class="text-muted small">(10/8)</span></td>
+            <td class="align-middle highlight">€{{site.p.saturday}}</td>
+            <td><a href="#" rel="external" class="btn btn-primary btn-sm w-100">Achetez billets Samedi</a></td></tr>
+          <tr>
+            <td class="align-middle">Dimanche <span class="text-muted small">(11/8)</span></td>
+            <td class="align-middle highlight">€{{site.p.sunday}}</td>
+            <td><a href="#" rel="external" class="btn btn-primary btn-sm w-100">Achetez billets Dimanche</a></td></tr>
+        </table>
+      </div>
+      <div class="col-md-6 mb-4">
+        <h3 class="text-center">Billets Vip</h3>
+        <table class="table">
+          <tr>
+            <td class="align-middle">Combi VIP</td>
+            <td class="align-middle highlight">€{{site.p.combi-vip}}</td>
+            <td><a href="#" rel="external" class="btn btn-primary btn-sm w-100">Achetez Billets Combi VIP</a></td>
+          </tr>
+          <tr>
+            <td class="align-middle">Vendredi VIP <span class="text-muted small">(9/8)</span></td>
+            <td class="align-middle highlight">€{{site.p.friday-vip}}</td>
+            <td><a href="#" rel="external" class="btn btn-primary btn-sm w-100">Achetez billets Vendredi VIP</a></td>
+          </tr>
+          <tr>
+            <td class="align-middle">Samedi VIP <span class="text-muted small">(10/8)</span></td>
+            <td class="align-middle highlight">€{{site.p.saturday-vip}}</td>
+            <td><a href="#" rel="external" class="btn btn-primary btn-sm w-100">Achetez billets Samedi VIP</a></td>
+          </tr>
+          <tr>
+            <td class="align-middle">Dimanche VIP  <span class="text-muted small">(11/8)</span></td>
+            <td class="align-middle highlight">€{{site.p.sunday-vip}}</td>
+            <td><a href="#" rel="external" class="btn btn-primary btn-sm w-100">Achetez billets Dimanche VIP</a></td>
+          </tr>
+        </table>
+      </div>
+      <div class="col-md-6 mb-4">
+        <h3 class="text-center">Eagle's Plaza</h3>
+        <p class="text-center">Pour en savoir plus, consultez notre <a href="{{site.baseurl}}/fr/camping">page de camping</a>.</p>
+        <table class="table">
+          <tr>
+            <td class="align-middle">DIY camping package</td>
+            <td class="align-middle highlight">€{{site.p.camping-diy}}</td>
+            <td><a href="#" rel="external" class="btn btn-primary btn-sm w-100">Achetez DIY package</a></td>
+          </tr>
+          <tr>
+            <td class="align-middle">Le Tipi</td>
+            <td class="align-middle highlight">€{{site.p.camping-tipi}}</td>
+            <td><a href="#" rel="external" class="btn btn-primary btn-sm w-100">Louer Tipi </a></td></tr>
+          <tr>
+            <td class="align-middle">Le Bell 2p</td>
+            <td class="align-middle highlight">€{{site.p.camping-bell-2}}</td>
+            <td><a href="#" rel="external" class="btn btn-primary btn-sm w-100">Louer Bell 2p</a></td>
+          </tr>
+          <tr>
+            <td class="align-middle">Le Bell 4p</td>
+            <td class="align-middle highlight">€{{site.p.camping-bell-4}}</td>
+            <td><a href="#" rel="external" class="btn btn-primary btn-sm w-100">Louer Bell 4p</a></td>
+          </tr>
+        </table>
+      </div>
+      <div class="col-md-6 mb-4">
+        <h3 class="text-center">Camping tickets</h3>
+        <p class="text-center">Pour en savoir plus, consultez notre <a href="{{site.baseurl}}/fr/camping">page de camping</a>.</p>
+        <table class="table">
+          <tr>
+            <td class="align-middle">Camping</td>
+            <td class="align-middle highlight">€{{site.p.camping}}</td>
+            <td><a href="#" rel="external" class="btn btn-primary btn-sm w-100">Achetez billets camping</a></td>
+          </tr>
+          <tr>
+            <td class="align-middle">Camping moto</td>
+            <td class="align-middle highlight">€{{site.p.camping-motor}}</td>
+            <td><a href="#" rel="external" class="btn btn-primary btn-sm w-100">Achetez billets camping moto</a></td>
+          </tr>
+          <tr>
+            <td class="align-middle">Camping camper</td>
+            <td class="align-middle highlight">€{{site.p.camping-camper}}</td>
+            <td><a href="#" rel="external" class="btn btn-primary btn-sm w-100">Achetez billets camping camper</a></td>
+          </tr>
+        </table>
+      </div>
+      <div class="col-12 my-4 text-center small text-muted">
+        <p>Les détenteurs d’un combi-ticket bénéficient de l’entrée gratuite à la soirée du vendredi. Les tickets journaliers (vendredi, samedi ou dimanche) ne sont eux bien évidement valables que le jour concerné et ce dès l’ouverture des portes.</p>
+        <p>Les prix mentionnés incluent tous les coûts.Selon la loi, les prix des billets comprennent maintenant tous les frais de service et de paiement. Bien que le prix initial du billet semble plus élevé que l'année dernière, le coût total du billet ne l'est pas.Support ticketmaster: 070 660 601 de 8h à 20h (lundi-samedi). Max. 30 cent/min. - help@ticketmaster.be - www.ticketmaster.be/help/</p>
+      </div>
+
+    </div>
+
+  </div>
+</div>

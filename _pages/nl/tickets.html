@@ -1,8 +1,116 @@
 ---
 layout: default
-title: "Tickets nl"
+title: "Tickets"
 lang: nl
 ref: tickets
 ---
 
-<h1>{{page.title}}</h1>
+<h1 class="page-title">{{page.title}}</h1>
+
+<div class="row">
+  <div class="col-lg-10 offset-lg-1">
+
+    <div class="row">
+      <div class="col-md-6 mb-4">
+        <h3 class="text-center">Normale tickets</h3>
+        <table class="table">
+          <tr>
+            <td class="align-middle">Combi</td>
+            <td class="align-middle highlight">€{{site.p.combi}}</td>
+            <td><a href="#" rel="external" class="btn btn-primary btn-sm w-100">Koop combi ticket</a></td>
+          </tr>
+          <tr>
+            <td class="align-middle">Vrijdag</td>
+            <td class="align-middle highlight">€{{site.p.friday}}</td>
+            <td><a href="#" rel="external" class="btn btn-primary btn-sm w-100">Koop vrijdag ticket</a></td></tr>
+          <tr>
+            <td class="align-middle">Zaterday</td>
+            <td class="align-middle highlight">€{{site.p.saturday}}</td>
+            <td><a href="#" rel="external" class="btn btn-primary btn-sm w-100">Koop zaterdag ticket</a></td></tr>
+          <tr>
+            <td class="align-middle">Zondag</td>
+            <td class="align-middle highlight">€{{site.p.sunday}}</td>
+            <td><a href="#" rel="external" class="btn btn-primary btn-sm w-100">Koop zondag ticket</a></td></tr>
+        </table>
+      </div>
+      <div class="col-md-6 mb-4">
+        <h3 class="text-center">Vip tickets</h3>
+        <table class="table">
+          <tr>
+            <td class="align-middle">VIP Combi</td>
+            <td class="align-middle highlight">€{{site.p.combi-vip}}</td>
+            <td><a href="#" rel="external" class="btn btn-primary btn-sm w-100">Koop combi VIP ticket</a></td>
+          </tr>
+          <tr>
+            <td class="align-middle">VIP vrijdag</td>
+            <td class="align-middle highlight">€{{site.p.friday-vip}}</td>
+            <td><a href="#" rel="external" class="btn btn-primary btn-sm w-100">Koop vrijdag VIP ticket</a></td>
+          </tr>
+          <tr>
+            <td class="align-middle">VIP zaterdag</td>
+            <td class="align-middle highlight">€{{site.p.saturday-vip}}</td>
+            <td><a href="#" rel="external" class="btn btn-primary btn-sm w-100">Koop zaterdag VIP ticket</a></td>
+          </tr>
+          <tr>
+            <td class="align-middle">VIP zondag</td>
+            <td class="align-middle highlight">€{{site.p.sunday-vip}}</td>
+            <td><a href="#" rel="external" class="btn btn-primary btn-sm w-100">Koop zondag VIP ticket</a></td>
+          </tr>
+        </table>
+      </div>
+      <div class="col-md-6 mb-4">
+        <h3 class="text-center">Eagle's Plaza</h3>
+        <p class="text-center">Voor meer info, check de <a href="{{site.baseurl}}/nl/camping">camping pagina</a>.</p>
+        <table class="table">
+          <tr>
+            <td class="align-middle">DIY kampeerpakket</td>
+            <td class="align-middle highlight">€{{site.p.camping-diy}}</td>
+            <td><a href="#" rel="external" class="btn btn-primary btn-sm w-100">Koop DIY kampeerpakket</a></td>
+          </tr>
+          <tr>
+            <td class="align-middle">Tipi tent</td>
+            <td class="align-middle highlight">€{{site.p.camping-tipi}}</td>
+            <td><a href="#" rel="external" class="btn btn-primary btn-sm w-100">Huur Tipi tent</a></td>
+          </tr>
+          <tr>
+            <td class="align-middle">Bell tent 2p</td>
+            <td class="align-middle highlight">€{{site.p.camping-bell-2}}</td>
+            <td><a href="#" rel="external" class="btn btn-primary btn-sm w-100">Huur Bell tent 2p</a></td>
+          </tr>
+          <tr>
+            <td class="align-middle">Bell tent 4p</td>
+            <td class="align-middle highlight">€{{site.p.camping-bell-4}}</td>
+            <td><a href="#" rel="external" class="btn btn-primary btn-sm w-100">Huur Bell tent 4p</a></td>
+          </tr>
+        </table>
+      </div>
+      <div class="col-md-6 mb-4">
+        <h3 class="text-center">Camping tickets</h3>
+        <p class="text-center">Voor meer info, check de <a href="{{site.baseurl}}/nl/camping">camping pagina</a>.</p>
+        <table class="table">
+          <tr>
+            <td class="align-middle">Camping</td>
+            <td class="align-middle highlight">€{{site.p.camping}}</td>
+            <td><a href="#" rel="external" class="btn btn-primary btn-sm w-100">Koop caming ticket</a></td>
+          </tr>
+          <tr>
+            <td class="align-middle">Motor camping</td>
+            <td class="align-middle highlight">€{{site.p.camping-motor}}</td>
+            <td><a href="#" rel="external" class="btn btn-primary btn-sm w-100">Koop motor camping ticket</a></td>
+          </tr>
+          <tr>
+            <td class="align-middle">Camper camping</td>
+            <td class="align-middle highlight">€{{site.p.camping-camper}}</td>
+            <td><a href="#" rel="external" class="btn btn-primary btn-sm w-100">Koop camper camping ticket</a></td>
+          </tr>
+        </table>
+      </div>
+      <div class="col-12 my-4 text-center small text-muted">
+        <p>Houders van een combiticket krijgen gratis toegang tot de extra line-up op vrijdag. Dagtickets zijn enkel geldig op de dag vermeld op het ticket (vrijdag, zaterdag of zondag), vanaf openingstijd.</p>
+        <p>De vermelde prijzen zijn inclusief alle kosten. Volgens de wet omvatten de ticketprijzen nu alle service- en betalingskosten. Hoewel de initiële ticketprijs hoger lijkt dan vorig jaar, is de totale ticketprijs dat niet.<br />Ticketmaster helpdesk: 070 660 601 van 8u tot 20u (maandag-zaterdag). Max. 30 cent/min. - help@ticketmaster.be - www.ticketmaster.be/help/</p>
+      </div>
+
+    </div>
+
+  </div>
+</div>

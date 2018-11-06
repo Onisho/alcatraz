@@ -1,8 +1,115 @@
 ---
 layout: default
-title: "Tickets en"
+title: "Tickets"
 lang: en
 ref: tickets
 ---
 
-<h1>{{page.title}}</h1>
+<h1 class="page-title">{{page.title}}</h1>
+
+<div class="row">
+  <div class="col-lg-10 offset-lg-1">
+
+    <div class="row">
+      <div class="col-md-6 mb-4">
+        <h3 class="text-center">Regular tickets</h3>
+        <table class="table">
+          <tr>
+            <td class="align-middle">Combi</td>
+            <td class="align-middle highlight">€{{site.p.combi}}</td>
+            <td><a href="#" rel="external" class="btn btn-primary btn-sm w-100">Buy combi ticket</a></td>
+          </tr>
+          <tr>
+            <td class="align-middle">Friday <span class="text-muted small">(9/8)</span></td>
+            <td class="align-middle highlight">€{{site.p.friday}}</td>
+            <td><a href="#" rel="external" class="btn btn-primary btn-sm w-100">Buy Friday ticket</a></td></tr>
+          <tr>
+            <td class="align-middle">Saturday <span class="text-muted small">(10/8)</span></td>
+            <td class="align-middle highlight">€{{site.p.saturday}}</td>
+            <td><a href="#" rel="external" class="btn btn-primary btn-sm w-100">Buy Saturday ticket</a></td></tr>
+          <tr>
+            <td class="align-middle">Sunday <span class="text-muted small">(11/8)</span></td>
+            <td class="align-middle highlight">€{{site.p.sunday}}</td>
+            <td><a href="#" rel="external" class="btn btn-primary btn-sm w-100">Buy Sunday ticket</a></td></tr>
+        </table>
+      </div>
+      <div class="col-md-6 mb-4">
+        <h3 class="text-center">Vip tickets</h3>
+        <table class="table">
+          <tr>
+            <td class="align-middle">VIP Combi</td>
+            <td class="align-middle highlight">€{{site.p.combi-vip}}</td>
+            <td><a href="#" rel="external" class="btn btn-primary btn-sm w-100">Buy combi VIP ticket</a></td>
+          </tr>
+          <tr>
+            <td class="align-middle">VIP Friday <span class="text-muted small">(9/8)</span></td>
+            <td class="align-middle highlight">€{{site.p.friday-vip}}</td>
+            <td><a href="#" rel="external" class="btn btn-primary btn-sm w-100">Buy Friday VIP ticket</a></td>
+          </tr>
+          <tr>
+            <td class="align-middle">VIP Saturday <span class="text-muted small">(10/8)</span></td>
+            <td class="align-middle highlight">€{{site.p.saturday-vip}}</td>
+            <td><a href="#" rel="external" class="btn btn-primary btn-sm w-100">Buy Saturday VIP ticket</a></td>
+          </tr>
+          <tr>
+            <td class="align-middle">VIP Sunday <span class="text-muted small">(11/8)</span></td>
+            <td class="align-middle highlight">€{{site.p.sunday-vip}}</td>
+            <td><a href="#" rel="external" class="btn btn-primary btn-sm w-100">Buy Sunday VIP ticket</a></td>
+          </tr>
+        </table>
+      </div>
+      <div class="col-md-6 mb-4">
+        <h3 class="text-center">Eagle's Plaza</h3>
+        <p class="text-center">Check <a href="{{site.baseurl}}/en/camping">camping page</a> for mor info.</p>
+        <table class="table">
+          <tr>
+            <td class="align-middle">DIY camping package</td>
+            <td class="align-middle highlight">€{{site.p.camping-diy}}</td>
+            <td><a href="#" rel="external" class="btn btn-primary btn-sm w-100">Buy DIY package</a></td>
+          </tr>
+          <tr>
+            <td class="align-middle">Tipi tent</td>
+            <td class="align-middle highlight">€{{site.p.camping-tipi}}</td>
+            <td><a href="#" rel="external" class="btn btn-primary btn-sm w-100">Rent Tipi tent</a></td></tr>
+          <tr>
+            <td class="align-middle">Bell tent 2p</td>
+            <td class="align-middle highlight">€{{site.p.camping-bell-2}}</td>
+            <td><a href="#" rel="external" class="btn btn-primary btn-sm w-100">Rent Bell tent 2p</a></td>
+          </tr>
+          <tr>
+            <td class="align-middle">Bell tent 4p</td>
+            <td class="align-middle highlight">€{{site.p.camping-bell-4}}</td>
+            <td><a href="#" rel="external" class="btn btn-primary btn-sm w-100">Rent Bell tent 4p</a></td>
+          </tr>
+        </table>
+      </div>
+      <div class="col-md-6 mb-4">
+        <h3 class="text-center">Camping tickets</h3>
+        <p class="text-center">Check <a href="{{site.baseurl}}/en/camping">camping page</a> for mor info.</p>
+        <table class="table">
+          <tr>
+            <td class="align-middle">Camping</td>
+            <td class="align-middle highlight">€{{site.p.camping}}</td>
+            <td><a href="#" rel="external" class="btn btn-primary btn-sm w-100">Buy caming ticket</a></td>
+          </tr>
+          <tr>
+            <td class="align-middle">Motor camping</td>
+            <td class="align-middle highlight">€{{site.p.camping-motor}}</td>
+            <td><a href="#" rel="external" class="btn btn-primary btn-sm w-100">Buy motor camping ticket</a></td>
+          </tr>
+          <tr>
+            <td class="align-middle">Camper camping</td>
+            <td class="align-middle highlight">€{{site.p.camping-camper}}</td>
+            <td><a href="#" rel="external" class="btn btn-primary btn-sm w-100">Buy camper camping ticket</a></td>
+          </tr>
+        </table>
+      </div>
+      <div class="col-12 my-4 text-center small text-muted">
+        <p>Combi ticket holders have free access to the extra friday line up. Day tickets however are only valid on the given day. Friday, Saturday or Sunday, as from opening time.<br />The prices mentioned include all costs.</p>
+        <p>By law, ticket prices now include all service and payment fees. Although the initial ticket price seems higher than last year, the total ticket cost is not.<br />Ticketmaster support: 070 660 601 from 8am till 8pm (monday-saturday). Max. 30 cent/min. - help@ticketmaster.be - www.ticketmaster.be/help/</p>
+      </div>
+
+    </div>
+
+  </div>
+</div>

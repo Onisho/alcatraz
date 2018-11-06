@@ -1,14 +1,24 @@
 ---
 layout: default
-title: line up dutch
+title: line up
 lang: nl
 ref: line-up
 ---
 
-<h1>{{page.title}}</h1>
+<h1 class="page-title">{{page.title}}</h1>
 
+<div class="row">
 {% assign items = site.bands | where: "lang", page.lang %}
 {% for item in items %}
-<h3><a href="{{site.baseurl}}/{{page.lang}}/bands/{{item.ref}}">{{ item.title }}</a> </h3>
-<p>{{ item.content }}</p>
+  {% assign playDate = item.date | date: "%b %d" %}
+  <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+    <div class="card card-primary card-lineup mb-3">
+      <a href="{{site.baseurl}}/{{page.lang}}/bands/{{item.ref}}"><img class="card-img-top" src="{{site.baseurl}}/img/bands/{{item.ref}}_picture.jpg" alt="{{item.title}}"></a>
+      <div class="card-body w-100 h-100">
+        <h4 class="card-title mb-0">{{item.title}}</h4>
+        <h6 class="text-secondary mb-0">{{playDate}}</h6>
+      </div>
+    </div>
+  </div>
 {% endfor %}
+</div>

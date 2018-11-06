@@ -13,13 +13,15 @@ ref: clubshows
     <div class="card card-primary mb-3">
       <img class="card-img-top" src="{{site.baseurl}}/img/clubshows/clubshow-{{band.band | replace: ' ', '-' | downcase}}.jpg" alt="{{band.band}}">
       <div class="card-body">
-        <h5 class="card-title">{{band.band}}
+        <h3 class="card-title">{{band.band}}
           {% if band.support %}
-          <br /><small class="text-muted">+ {{band.support}}</small>
+          <br /><small class="text-secondary">+ {{band.support}}</small>
           {% endif %}
-        </h5>
-        <h6 class="card-subtitle mb-2 text-muted">{{band.date}}</h6>
-        <a href="{{band.tickets}}" rel="external" class="btn btn-primary"><i class="fas fa-ticket-alt"></i> Tickets</a>
+        </h3>
+        <h6 class="card-subtitle mb-2 text-muted"><i class="far fa-calendar-alt"></i> {{band.date}}</h6>
+        {% if band.tickets %}
+        <a href="{{band.tickets}}" rel="external" class="btn btn-primary my-2"><i class="fas fa-ticket-alt"></i> Tickets</a>
+        {% endif %}
       </div>
     </div>
   </div>

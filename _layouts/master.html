@@ -1,0 +1,55 @@
+---
+layout: compress
+---
+
+<html>
+  {% include head.html %}
+
+<body>
+
+  {% include top.html %}
+
+  {% include navigation.html %}
+
+  <!-- include carousel -->
+  <section class="carousel">
+    {% include carousel.html %}
+  </section>
+
+  <!-- include title -->
+  <section class="title">
+    <div class="amf-title"></div>
+  </section>
+
+  {{content}}
+
+  <!-- include partners -->
+  <section class="partners py-5 text-center">
+   <div class="container-fluid">
+     <div class="row">
+       <div class="col">{% include partners.html %}</div>
+     </div>
+   </div>
+  </section>
+
+  <!-- include footer -->
+  <section class="footer py-5 text-center">
+   <div class="container-fluid">
+     <div class="row">
+       <div class="col">{% include newsletter.html %}</div>
+     </div>
+     <div class="row">
+       <div class="col">{% include footer.html %}</div>
+     </div>
+   </div>
+  </section>
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/bricklayer/0.4.2/bricklayer.min.js"></script>
+  <script src="{{site.baseurl}}/js/script.js"></script>
+
+</body>
+</html>

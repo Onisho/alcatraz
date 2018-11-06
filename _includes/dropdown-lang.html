@@ -1,5 +1,5 @@
-<ul class="nav ml-auto">
-  <li class="nav-item dropdown">
+<ul class="nav">
+  <li class="nav-item ml-auto dropdown">
     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
       {{site.l[page.lang]}}
     </a>
@@ -13,8 +13,5 @@
       <a href="{{site.baseurl}}{{ page.url }}" class="dropdown-item {{ page.lang }}">{{site.l[page.lang]}}</a>
       {% endfor %}
     </div>
-  </li>
-  <li class="nav-item">
-    <a href="http://order.brandsfit.com" rel="external" class="nav-link clubshop"><span class="d-none d-sm-inline">{{site.t[page.lang].club_webshop}}</span></a>
   </li>
 </ul>

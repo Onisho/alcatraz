@@ -2,15 +2,15 @@
 # main top navigation -be sure to add both languages
 
 en:
-  home:
-    name: Home
-    url: /
   tickets:
     name: Tickets
     url: /tickets
   line-up:
     name: Line-up
     url: /line-up
+  vip:
+    name: Vip
+    url: /vip
   photos:
     name: Photos
     url: /photos
@@ -23,29 +23,29 @@ en:
   history:
     name: History
     url: /history
-  clubshows:
-    name: Club Shows
-    url: /clubshows
   info:
     name: Info
     subcategories:
       faq:
-        name: Faq
-        url: /info/faq
+        name: Fesival
+        url: /info/festival
       camping:
         name: Camping
         url: /info/camping
-    
+  clubshows:
+    name: Club Shows
+    url: /clubshows
+
 fr:
-  home:
-    name: Accueil
-    url: /
   tickets:
     name: Billets
     url: /billets
   line-up:
     name: Line-up
     url: /line-up
+  vip:
+    name: Vip
+    url: /vip
   photos:
     name: Photos
     url: /photos
@@ -58,20 +58,29 @@ fr:
   history:
     name: Histoire
     url: /histoire
+  info:
+    name: Info
+    subcategories:
+      faq:
+        name: Fesival
+        url: /info/festival
+      camping:
+        name: Camping
+        url: /info/camping
   clubshows:
     name: Spectacles de club
     url: /spectacles-de-club
-    
+
 nl:
-  home:
-    name: Home
-    url: /
   tickets:
     name: Tickets
     url: /tickets
   line-up:
     name: Line-up
     url: /line-up
+  vip:
+    name: Vip
+    url: /vip
   photos:
     name: Foto's
     url: /fotos
@@ -84,8 +93,15 @@ nl:
   history:
     name: Historiek
     url: /historiek
+  info:
+    name: Info
+    subcategories:
+      faq:
+        name: Fesival
+        url: /info/festival
+      camping:
+        name: Camping
+        url: /info/camping
   clubshows:
     name: Club Shows
     url: /clubshows
-      
-
