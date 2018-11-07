@@ -1,2 +1,40 @@
-<p>{% include social.html %}</p>
-<p class="small">© 2019 - Apache Productions VZW – All rights reserved - <a href="mailto:info@alcatraz.be">info@alcatraz.be</a> | <a href="{{site.baseurl}}/{{page.lang}}/cookie-policy">Cookie Policy</a> | <a href="{{site.baseurl}}/{{page.lang}}/privacy-policy">Privacy Policy</a></p>
+<div class="row">
+  <div class="col-3">
+    <p><strong>ALCATRAZ</strong><br />
+    Hard Rock & Metal Festival<br />
+    August 9-10-11, 2019<br />
+    Kortrijk Belgium</p>
+    <p><a href="{{site.baseurl}}/{{page.lang}}/tickets" title="tickets" class="btn btn-secondary">Tickets</a></p>
+  </div>
+  <div class="col-3">
+    <nav class="nav flex-column">
+      {% for menu in site.data.navigation[page.lang] %}
+      {% assign active = nil %}
+      {% assign active = '/' | append: page.lang | append: menu[1].url | append: '.html' %}
+        {% if menu[1].cat == 'primary' %}
+          <a href="{{site.baseurl}}/{{page.lang}}{{ menu[1].url }}" class="nav-link {{menu[1].name}}">{{ menu[1].name }}</a>
+        {% endif %}
+      {% endfor %}
+    </nav>
+  </div>
+  <div class="col-3">
+    <nav class="nav flex-column">
+      {% for menu in site.data.navigation[page.lang] %}
+      {% assign active = nil %}
+      {% assign active = '/' | append: page.lang | append: menu[1].url | append: '.html' %}
+        {% if menu[1].cat == 'secondary' %}
+          <a href="{{site.baseurl}}/{{page.lang}}{{ menu[1].url }}" class="nav-link {{menu[1].name}}">{{ menu[1].name }}</a>
+        {% endif %}
+      {% endfor %}
+    </nav>
+  </div>
+  <div class="col-3">
+    {% include social.html %}
+  </div>
+</div>
+
+<div class="row py-3">
+  <div class="col">
+    <p class="small">© 2019 - Apache Productions VZW – All rights reserved - <a href="mailto:info@alcatraz.be">info@alcatraz.be</a> | <a href="{{site.baseurl}}/{{page.lang}}/cookie-policy">Cookie Policy</a> | <a href="{{site.baseurl}}/{{page.lang}}/privacy-policy">Privacy Policy</a></p>
+  </div>
+</div>

@@ -5,103 +5,139 @@ en:
   tickets:
     name: Tickets
     url: /tickets
+    cat: primary
   line-up:
     name: Line-up
     url: /line-up
+    cat: primary
   vip:
     name: Vip
     url: /vip
+    cat: primary
   photos:
     name: Photos
     url: /photos
+    cat: secondary
   canal-metal:
     name: Canal Metal
     url: /canal-metal
+    cat: secondary
   partners:
     name: Partners
     url: /partners
+    cat: secondary
   history:
     name: History
     url: /history
+    cat: secondary
   info:
     name: Info
+    url: /info
+    cat: primary
     subcategories:
       faq:
         name: Fesival
         url: /info/festival
+        cat: primary
       camping:
         name: Camping
         url: /info/camping
+        cat: primary
   clubshows:
     name: Club Shows
     url: /clubshows
+    cat: primary
 
 fr:
   tickets:
     name: Billets
     url: /billets
+    cat: primary
   line-up:
     name: Line-up
     url: /line-up
+    cat: primary
   vip:
     name: Vip
     url: /vip
+    cat: primary
   photos:
     name: Photos
     url: /photos
+    cat: secondary
   canal-metal:
     name: Canal Metal
     url: /canal-metal
+    cat: secondary
   partners:
     name: Partenaires
     url: /partenaires
+    cat: secondary
   history:
     name: Histoire
     url: /histoire
+    cat: secondary
   info:
     name: Info
+    url: /info
+    cat: primary
     subcategories:
       faq:
         name: Fesival
         url: /info/festival
+        cat: primary
       camping:
         name: Camping
         url: /info/camping
+        cat: primary
   clubshows:
     name: Spectacles de club
     url: /spectacles-de-club
+    cat: primary
 
 nl:
   tickets:
     name: Tickets
     url: /tickets
+    cat: primary
   line-up:
     name: Line-up
     url: /line-up
+    cat: primary
   vip:
     name: Vip
     url: /vip
+    cat: primary
   photos:
     name: Foto's
     url: /fotos
+    cat: secondary
   canal-metal:
     name: Canal Metal
     url: /canal-metal
+    cat: secondary
   partners:
     name: Partners
     url: /partners
+    cat: secondary
   history:
     name: Historiek
     url: /historiek
+    cat: secondary
   info:
     name: Info
+    url: /info
+    cat: primary
     subcategories:
       faq:
         name: Fesival
         url: /info/festival
+        cat: primary
       camping:
         name: Camping
         url: /info/camping
+        cat: primary
   clubshows:
     name: Club Shows
     url: /clubshows
+    cat: primary
