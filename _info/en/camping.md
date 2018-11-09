@@ -1,6 +1,6 @@
 ---
 layout: text
-title: info camping
+title: info camping en
 lang: en
 ref: camping
 ---
@@ -22,8 +22,8 @@ Extra service in 2018:
 ##### Motor Camping
 Those who come by motorbike have 2 options:
 
-You buy a ticket for the Motor Camping which entitles you to place 1 motorbike + 1 small tent at the Camper Camping next to the festival terrain.. Cost: € 25, only accessible for motorbikers. See Camper Camping for further information. Follow the signs to the Camper Camping.
-You park your motorbike at Kortrijk XPO parking lot for €2 per day, take the free shuttle to the festival terrain and stay at the Tent Camping (€16 per person).
+* You buy a ticket for the Motor Camping which entitles you to place 1 motorbike + 1 small tent at the Camper Camping next to the festival terrain.. Cost: € 25, only accessible for motorbikers. See Camper Camping for further information. Follow the signs to the Camper Camping.
+* You park your motorbike at Kortrijk XPO parking lot for €2 per day, take the free shuttle to the festival terrain and stay at the Tent Camping (€16 per person).
 
 ##### Price
 Admission to the campsite costs 16 EUR per person.
@@ -45,14 +45,14 @@ Bad Godesberglaan 22 - 8500 Kortrijk
 In respect of the residents nearby our festival site, you cannot park your car in the surroundings of the festival. If you do so, fines will be issued.
 The official parking space of Alcatraz festival is located at Kortrijk Xpo / Kinepolis. To access this parking, please use the following GPS coordinates:
 
-GPS COORDINATES:
+**GPS COORDINATES:**
 Alcatraz Parking:
 Kennedylaan 100
 8500 KORTRIJK (B)
 
 Parking prices are very low (2 € per exit) and there is a free shuttle service from the parking to the main entrance of the festival.
 
-FREE SHUTTLE SERVICE:
+**FREE SHUTTLE SERVICE:**
 Friday: 8.00 – 3.00
 Saturday: 8:00 – 3.30
 Sunday: 8.00 – 3.00

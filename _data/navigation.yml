@@ -14,14 +14,19 @@ en:
     name: Vip
     url: /vip
     cat: primary
-  photos:
-    name: Photos
-    url: /photos
+  media:
+    name: Media
+    url: /media
     cat: secondary
-  canal-metal:
-    name: Canal Metal
-    url: /canal-metal
-    cat: secondary
+    subcategories:
+      photos:
+        name: Photos
+        url: /photos
+        cat: secondary
+      canal-metal:
+        name: Canal Metal
+        url: /canal-metal
+        cat: secondary
   partners:
     name: Partners
     url: /partners
@@ -61,14 +66,19 @@ fr:
     name: Vip
     url: /vip
     cat: primary
-  photos:
-    name: Photos
-    url: /photos
+  media:
+    name: Media
+    url: /media
     cat: secondary
-  canal-metal:
-    name: Canal Metal
-    url: /canal-metal
-    cat: secondary
+    subcategories:
+      photos:
+        name: Photos
+        url: /photos
+        cat: secondary
+      canal-metal:
+        name: Canal Metal
+        url: /canal-metal
+        cat: secondary
   partners:
     name: Partenaires
     url: /partenaires
@@ -108,14 +118,19 @@ nl:
     name: Vip
     url: /vip
     cat: primary
-  photos:
-    name: Foto's
-    url: /fotos
+  media:
+    name: Media
+    url: /media
     cat: secondary
-  canal-metal:
-    name: Canal Metal
-    url: /canal-metal
-    cat: secondary
+    subcategories:
+      photos:
+        name: Foto's
+        url: /fotos
+        cat: secondary
+      canal-metal:
+        name: Canal Metal
+        url: /canal-metal
+        cat: secondary
   partners:
     name: Partners
     url: /partners

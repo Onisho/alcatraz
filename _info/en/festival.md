@@ -1,6 +1,6 @@
 ---
 layout: text
-title: info festival
+title: info festival en
 lang: en
 ref: festival
 ---
@@ -61,6 +61,8 @@ Are you one of our VIP or Press guests, you will also have received your e-ticke
 
 Did you not buy your tickets yet... It's a shame. You still have plenty of time to buy your tickets online so as to avoid waiting queues at the ticket booth. Anyhow, it will still be possible of course to buy your tickets during the festival. On arrival, please go to the ticket booths just before the entrance. Our crew will be giving you your wristband so that you can easily access the festival area.
 
+##### When do the doors to the festival open?
+On Saturday and Sunday, the gates to hell open at 09h30, one hour and a half before the first band starts on stage. On Friday, the gates open at 12h00.
 
 ---
 
@@ -78,10 +80,6 @@ No crowd surfing allowed on Alcatraz!
 
 ##### I would like to bring my children, do they also have to buy a ticket?
 We cannot prohibit to bring your children, but everyone, even babies, must hold a valid festival ticket and here's why: we want parents to be aware that bringing children to a crowded festival can put the children at risk. With the purchase of a festival ticket the parents accept full responsibility.
-
-##### Can I leave the festival site?
-We can’t prohibit people from leaving the festival grounds. We ask, however, to respect the environment, which means: all waste in the trash cans.
-Respect the homes and gardens of the neighbours.
 
 ##### When do the doors to the festival open?
 On Saturday and Sunday, the gates to hell open at 09h30, one hour and a half before the first band starts on stage. On Friday, the gates open at 12h00.
@@ -112,3 +110,6 @@ Retailers can contact the organization to check availability and to receive more
 
 ##### What's the minimum age to attend the festival?
 Children under 16 are only admitted if they are accompanied by an adult.
+
+##### Can I hand out flyers and promotional posters?
+For environmental protection reasons, the distribution of leaflets and promotional posters is forbidden on the festival site. If you want your banners and posters to be put up on the festival site, please contact Virus Promotions.

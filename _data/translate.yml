@@ -15,3 +15,14 @@ t:
     en: Your email address
     nl: Uw email adres
     fr: Votre adresse email
+
+## tickets link ##
+  tickets_text:
+    en: Tickets
+    nl: Tickets
+    fr: Billets
+
+  tickets_url:
+    en: tickets
+    nl: tickets
+    fr: billets

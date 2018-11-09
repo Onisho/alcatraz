@@ -75,13 +75,13 @@ defaults:
     scope:
       path: "_info/nl"
     values:
-      permalink: "/en/info/:title"
+      permalink: "/nl/info/:title"
       lang: "nl"
   -
     scope:
       path: "_info/fr"
     values:
-      permalink: "/en/info/:title"
+      permalink: "/fr/info/:title"
       lang: "fr"
   -
     scope:

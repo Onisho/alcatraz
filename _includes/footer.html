@@ -1,34 +1,52 @@
 <div class="row">
-  <div class="col-3">
+  <div class="col-12 col-md-3">
+    <div class="row">
+      <div class="col-6 col-md-12">
     <p><strong>ALCATRAZ</strong><br />
     Hard Rock & Metal Festival<br />
     August 9-10-11, 2019<br />
     Kortrijk Belgium</p>
-    <p><a href="{{site.baseurl}}/{{page.lang}}/tickets" title="tickets" class="btn btn-secondary">Tickets</a></p>
+      </div>
+      <div class="col-6 col-md-12">
+        <p><a href="{{site.baseurl}}/{{page.lang}}/{{ site.data.translate.t['tickets_url'][page.lang] }}" title="tickets" class="btn btn-secondary"><i class="fas fa-ticket-alt"></i> {{ site.data.translate.t['tickets_text'][page.lang] }}</a></p>
+      </div>
+    </div>
   </div>
-  <div class="col-3">
+  <div class="col-6 col-md-3 mb-3">
     <nav class="nav flex-column">
       {% for menu in site.data.navigation[page.lang] %}
       {% assign active = nil %}
       {% assign active = '/' | append: page.lang | append: menu[1].url | append: '.html' %}
         {% if menu[1].cat == 'primary' %}
-          <a href="{{site.baseurl}}/{{page.lang}}{{ menu[1].url }}" class="nav-link {{menu[1].name}}">{{ menu[1].name }}</a>
+          {% if menu[1].subcategories %}
+            {% for submenu in menu[1].subcategories %}
+              <a href="{{site.baseurl}}/{{page.lang}}{{ submenu[1].url }}" class="nav-link {{submenu[1].name}}">{{ submenu[1].name }}</a>
+            {% endfor %}
+          {% else %}
+            <a href="{{site.baseurl}}/{{page.lang}}{{ menu[1].url }}" class="nav-link {{menu[1].name}}">{{ menu[1].name }}</a>
+          {% endif %}
         {% endif %}
       {% endfor %}
     </nav>
   </div>
-  <div class="col-3">
+  <div class="col-6 col-md-3 mb-3">
     <nav class="nav flex-column">
       {% for menu in site.data.navigation[page.lang] %}
       {% assign active = nil %}
       {% assign active = '/' | append: page.lang | append: menu[1].url | append: '.html' %}
         {% if menu[1].cat == 'secondary' %}
-          <a href="{{site.baseurl}}/{{page.lang}}{{ menu[1].url }}" class="nav-link {{menu[1].name}}">{{ menu[1].name }}</a>
+          {% if menu[1].subcategories %}
+            {% for submenu in menu[1].subcategories %}
+              <a href="{{site.baseurl}}/{{page.lang}}{{ submenu[1].url }}" class="nav-link {{submenu[1].name}}">{{ submenu[1].name }}</a>
+            {% endfor %}
+          {% else %}
+            <a href="{{site.baseurl}}/{{page.lang}}{{ menu[1].url }}" class="nav-link {{menu[1].name}}">{{ menu[1].name }}</a>
+          {% endif %}
         {% endif %}
       {% endfor %}
     </nav>
   </div>
-  <div class="col-3">
+  <div class="col-12 col-md-3 mb-3">
     {% include social.html %}
   </div>
 </div>
