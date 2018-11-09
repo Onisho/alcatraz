@@ -4,6 +4,7 @@ title:  "My second post"
 date:   2012-09-13 16:16:01 -0600
 categories: news
 lang: en
+image: news_1
 ---
 
-post en 2 is great
+Lorem ipsum dolor sit amet, option abhorreant scribentur duo ut, choro vivendo temporibus mei at. Ex cum mundi accumsan voluptatum. Cum quod honestatis at. Has ut mundi dolor vivendo. Minim dicant molestiae has id, his suas docendi ut, cum ex eleifend salutandi.

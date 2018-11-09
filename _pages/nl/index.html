@@ -5,6 +5,80 @@ lang: nl
 ref: homepage
 ---
 
-<h1>Home Dutch</h1>
 
-{% include posts.html language='nl' %}
+<div class="row mb-5">
+{% assign items = site.bands | where: "lang", page.lang %}
+
+{% for item in items %}
+  {% assign playDate = item.date | date: "%b %d" %}
+  <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+    <div class="card card-primary card-lineup mb-3">
+      <div class="row">
+        <div class="col-5 d-block d-sm-none">
+          <a href="{{site.baseurl}}/{{page.lang}}/bands/{{item.ref}}"><img class="card-img-top" src="{{site.baseurl}}/img/bands/{{item.ref}}_picture.jpg" alt="{{item.title}}"></a>
+        </div>
+        <div class="col-7 d-block d-sm-none">
+            <div class="card-body">
+              <h5 class="card-title mb-0 text-primary">{{item.title}}</h5>
+              <h6 class="text-secondary mb-0">{{playDate}}</h6>
+            </div>
+        </div>
+        <div class="col-12 d-none d-sm-block">
+          <a href="{{site.baseurl}}/{{page.lang}}/bands/{{item.ref}}"><img class="card-img-top" src="{{site.baseurl}}/img/bands/{{item.ref}}_picture.jpg" alt="{{item.title}}"></a>
+          <div class="card-img-overlay">
+            <div class="card-body w-100 h-100">
+              <h4 class="card-title mb-0">{{item.title}}</h4>
+              <h6 class="mb-0">{{playDate}}</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endfor %}
+
+</div>
+
+
+
+
+
+<div class="row">
+
+  <div class="col-12 col-md-6">
+    <h2>Alcatraz Nieuws</h2>
+    <hr />
+    {% include posts.html language='en' %}
+  </div>
+
+  <div class="col-12 col-md-4">
+    <h2>Clubshows</h2>
+    <hr />
+    {% for band in site.data.clubshows %}
+    {% assign gigDate = band.date | date: "%b %d, %Y" %}
+    <article class="pb-3">
+      <div class="row">
+        <div class="col">
+          <h6 class="card-subtitle text-muted mb-2">{{gigDate}}</h6>
+          <h4>{{band.band}}
+            {% if band.support %}
+            <br /><small class="text-muted">+ {{band.support}}</small>
+            {% endif %}
+          </h4>
+        </div>
+        <div class="col text-right">
+          {% if band.tickets %}
+          <a href="{{band.tickets}}" rel="external" class="btn btn-primary btn-sm my-2"><i class="fas fa-ticket-alt"></i> Tickets</a>
+          {% endif %}
+        </div>
+      </div>
+    </article>
+    {% endfor %}
+  </div>
+
+  <div class="col-12 col-md-2">
+    <h2>social</h2>
+    <hr />
+  </div>
+
+</div>
