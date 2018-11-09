@@ -9,16 +9,33 @@ ref: line-up
 
 <div class="row">
 {% assign items = site.bands | where: "lang", page.lang %}
+
 {% for item in items %}
   {% assign playDate = item.date | date: "%b %d" %}
-  <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+  <div class="col-12 col-sm-6 col-md-6 col-lg-4">
     <div class="card card-primary card-lineup mb-3">
-      <a href="{{site.baseurl}}/{{page.lang}}/bands/{{item.ref}}"><img class="card-img-top" src="{{site.baseurl}}/img/bands/{{item.ref}}_picture.jpg" alt="{{item.title}}"></a>
-      <div class="card-body w-100 h-100">
-        <h4 class="card-title mb-0">{{item.title}}</h4>
-        <h6 class="text-secondary mb-0">{{playDate}}</h6>
+      <div class="row">
+        <div class="col-5 d-block d-sm-none">
+          <a href="{{site.baseurl}}/{{page.lang}}/bands/{{item.ref}}"><img class="card-img-top" src="{{site.baseurl}}/img/bands/{{item.ref}}_picture.jpg" alt="{{item.title}}"></a>
+        </div>
+        <div class="col-7 d-block d-sm-none">
+            <div class="card-body">
+              <h5 class="card-title mb-0 text-primary">{{item.title}}</h5>
+              <h6 class="text-secondary mb-0">{{playDate}}</h6>
+            </div>
+        </div>
+        <div class="col-12 d-none d-sm-block">
+          <a href="{{site.baseurl}}/{{page.lang}}/bands/{{item.ref}}"><img class="card-img-top" src="{{site.baseurl}}/img/bands/{{item.ref}}_picture.jpg" alt="{{item.title}}"></a>
+          <div class="card-img-overlay">
+            <div class="card-body w-100 h-100">
+              <h4 class="card-title mb-0">{{item.title}}</h4>
+              <h6 class="mb-0">{{playDate}}</h6>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 {% endfor %}
+
 </div>
